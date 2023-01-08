@@ -47,7 +47,7 @@ public class FormatTypeCsvEscapeTest {
     public void escapingQuoted_escapesQuotesEncoded() {
         String ascii = "foo \"bar\" baz";
         assertEquals(
-                Q + "foo " + Q + Q + "bar" + Q + Q + " baz" + Q,
+                Q + "XXfoo " + Q + Q + "bar" + Q + Q + " baz" + Q,
                 csv.escape(ascii)
         );
     }
