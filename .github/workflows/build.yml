@@ -40,5 +40,5 @@ jobs:
       - name: Install just
         uses: taiki-e/install-action@just
 
-      - name: Run tests, using ant via just recipe
-        run: just verify
+      - name: Run headless tests, using ant via just recipe
+        run: just verify-ci

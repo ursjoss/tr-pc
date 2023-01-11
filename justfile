@@ -3,6 +3,8 @@
 
 repodir := `pwd`
 
+alias verify-ci := verify-tr
+
 # Builds the entire project - also downloading the harness if needed
 build:
     ant build -Dnbplatform.default.netbeans.dest.dir={{repodir}}/netbeans-plat/16/ide
@@ -15,9 +17,11 @@ build-zip:
 verify-module module: build
     cd modules/{{module}} && ant test -Dnbplatform.default.netbeans.dest.dir={{repodir}}/netbeans-plat/16/ide
 
-# Verifies all modules that have tests
-verify:
-    just verify-module activation
+# Verifies modules with headless tests
+verify-headless: verify-tr verify-deps
+
+# Verifies thinking rock modules (only headless)
+verify-tr:
     just verify-module au.com.trgtd.tr.archive
     just verify-module au.com.trgtd.tr.cal
     just verify-module au.com.trgtd.tr.calendar
@@ -79,28 +83,11 @@ verify:
     just verify-module au.com.trgtd.tr.view.reference
     just verify-module au.com.trgtd.tr.view.someday
     just verify-module au.com.trgtd.tr.view.topics
-    just verify-module commons.email
-    just verify-module commons-lang
-    just verify-module commons-lang3
-    just verify-module commons-logging
-    just verify-module commons-text
-    just verify-module fop
-    just verify-module glazedlists-1.7.0_java
-    just verify-module ical4j
-    just verify-module jasperreports
-    just verify-module javamail
-    just verify-module jaxb
-    just verify-module miglayout-4.0-swing
-    just verify-module minimal-json
-    just verify-module swingx
     just verify-module tr.extract.reports
     just verify-module tr.extract.reports.projectdetails
     just verify-module tr.extract.reports.projectoutline
     just verify-module tr.model
-    just verify-module xalan
-    just verify-module xstream-1.4.19
-    just verify-module activation
-    
+
 # The following modules don't have test. Need to be included if they get any.
 # just verify-module au.com.trgtd.tr.appl
 # just verify-module au.com.trgtd.tr.extract.clean
@@ -115,8 +102,31 @@ verify:
 # just verify-module au.com.trgtd.tr.l10n.es_ES
 # just verify-module au.com.trgtd.tr.l10n.fr_FR
 
-# The following modules require an X-Server to run, currently not available on CI
-# just verify-module au.com.trgtd.tr.swing
+
+# Verifies the modules of external dependencies
+verify-deps:
+    just verify-module activation
+    just verify-module commons.email
+    just verify-module commons-lang
+    just verify-module commons-lang3
+    just verify-module commons-logging
+    just verify-module commons-text
+    just verify-module fop
+    just verify-module glazedlists-1.7.0_java
+    just verify-module ical4j
+    just verify-module jasperreports
+    just verify-module javamail
+    just verify-module jaxb
+    just verify-module miglayout-4.0-swing
+    just verify-module minimal-json
+    just verify-module swingx
+    just verify-module xalan
+    just verify-module xstream-1.4.19
+
+# Verifies a module that requires a graphical user interface (not in CI)
+verify-ui:
+    just verify-module au.com.trgtd.tr.swing
+
 
 # Shows some diagnostics used by ant
 diagnostics:
