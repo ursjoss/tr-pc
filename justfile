@@ -58,7 +58,6 @@ verify:
     just verify-module au.com.trgtd.tr.resource
     just verify-module au.com.trgtd.tr.runtime
     just verify-module au.com.trgtd.tr.services
-    just verify-module au.com.trgtd.tr.swing
     just verify-module au.com.trgtd.tr.sync.device
     just verify-module au.com.trgtd.tr.sync.iphone
     just verify-module au.com.trgtd.tr.task.activation
@@ -115,6 +114,9 @@ verify:
 # just verify-module au.com.trgtd.tr.l10n.en_US
 # just verify-module au.com.trgtd.tr.l10n.es_ES
 # just verify-module au.com.trgtd.tr.l10n.fr_FR
+
+# The following modules require an X-Server to run, currently not available on CI
+# just verify-module au.com.trgtd.tr.swing
 
 # Shows some diagnostics used by ant
 diagnostics:
