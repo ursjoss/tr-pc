@@ -11,5 +11,6 @@ junit4 = { module = "junit:junit", version.ref = "junit4" }
 miglayout-swing = { module = "com.miglayout:miglayout-swing", version.ref = "miglayout-swing" }
 netbeans-openide-filesystems = { module = "org.netbeans.api:org-openide-filesystems", version.ref = "netbeans-api" }
 netbeans-openide-modules-options-api = { module = "org.netbeans.api:org-netbeans-modules-options-api", version.ref = "netbeans-api" }
+netbeans-openide-util = { module = "org.netbeans.api:org-openide-util", version.ref = "netbeans-api" }
 netbeans-openide-util-ui = { module = "org.netbeans.api:org-openide-util-ui", version.ref = "netbeans-api" }
 netbeans-openide-windows = { module = "org.netbeans.api:org-openide-windows", version.ref = "netbeans-api" }
