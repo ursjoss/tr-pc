@@ -1,10 +1,12 @@
 [versions]
+ical4j = "1.0.5.2"
 junit-jupiter = "5.10.1"
 junit4 = "4.13.2"
 miglayout-swing = "4.1"
 netbeans-api = "RELEASE220"
 
 [libraries]
+ical4j = { module = "org.mnode.ical4j:ical4j", version.ref = "ical4j" }
 junit-jupiter = { module = "org.junit.jupiter:junit-jupiter", version.ref = "junit-jupiter" }
 junit-vintage-engine = { module = "org.junit.vintage:junit-vintage-engine", version.ref = "junit-jupiter" }
 junit4 = { module = "junit:junit", version.ref = "junit4" }

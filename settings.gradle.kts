@@ -4,7 +4,7 @@ plugins {
 
 rootProject.name = "ThinkingRock"
 
-val trProjects = listOf("appl", "calendar", "prefs.dates", "resource", "swing", "util", "runtime")
+val trProjects = listOf("appl", "calendar", "calendar.ical4j", "prefs.dates", "resource", "swing", "util", "runtime")
 
 fun trPackage(projects: List<String>) = projects.map { "au.com.trgtd.tr.$it" }
 
