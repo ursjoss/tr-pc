@@ -4,7 +4,7 @@ plugins {
 
 rootProject.name = "ThinkingRock"
 
-val trProjects = listOf("appl", "prefs.dates", "resource", "util", "runtime")
+val trProjects = listOf("appl", "prefs.dates", "resource", "swing", "util", "runtime")
 
 fun trPackage(projects: List<String>) = projects.map { "au.com.trgtd.tr.$it" }
 
