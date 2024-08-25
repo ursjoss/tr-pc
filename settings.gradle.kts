@@ -4,20 +4,22 @@ plugins {
 
 rootProject.name = "ThinkingRock"
 
-val trProjects = listOf("appl", "calendar", "calendar.ical4j", "prefs.actions", "prefs.dates", "prefs.projects", "prefs.recurrence", "resource", "swing", "util", "runtime")
+val auTrProjects = listOf("appl", "calendar", "calendar.ical4j", "prefs.actions", "prefs.dates", "prefs.projects", "prefs.recurrence", "resource", "swing", "util", "runtime").map { "au.com.trgtd.tr.$it" }
 
-fun trPackage(projects: List<String>) = projects.map { "au.com.trgtd.tr.$it" }
+val trProjects = listOf("model").map { "tr.$it" }
 
-include(trPackage(trProjects))
+include(auTrProjects)
+include(trProjects)
 
 defineProjectPaths()
 
 fun defineProjectPaths() {
-    mapOf(
-        "modules" to trPackage(trProjects),
-    ).forEach { (subDir, projects) ->
+    setOf(
+        auTrProjects,
+        trProjects,
+    ).forEach { projects ->
         projects.forEach { projectName ->
-             project(":$projectName").projectDir = file("$subDir/$projectName")
+             project(":$projectName").projectDir = file("modules/$projectName")
         }
     }
 }
