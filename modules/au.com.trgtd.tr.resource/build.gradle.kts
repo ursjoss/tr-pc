@@ -1,4 +1,4 @@
-description = "TR-Resources"
+description = "TR-Resource"
 
 dependencies {
     implementation(libs.netbeans.openide.filesystems)
