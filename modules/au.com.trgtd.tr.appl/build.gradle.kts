@@ -1,8 +1,13 @@
 description = "TR-Application"
 
+plugins {
+    id("java-library")
+}
+
 dependencies {
+    api(libs.netbeans.openide.modules.options.api)
+
     implementation(libs.netbeans.openide.windows)
-    implementation(libs.netbeans.openide.modules.options.api)
     implementation(libs.miglayout.swing)
 }
 
