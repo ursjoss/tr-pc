@@ -5,13 +5,14 @@ plugins {
 }
 
 dependencies {
+    api(project(":au.com.trgtd.tr.util"))
+
     implementation(project(":au.com.trgtd.tr.appl"))
     implementation(project(":au.com.trgtd.tr.prefs.actions"))
     implementation(project(":au.com.trgtd.tr.prefs.dates"))
     implementation(project(":au.com.trgtd.tr.prefs.projects"))
     implementation(project(":au.com.trgtd.tr.prefs.recurrence"))
     implementation(project(":au.com.trgtd.tr.resource"))
-    implementation(project(":au.com.trgtd.tr.util"))
 
     implementation(libs.ical4j)
     implementation(libs.apache.commons.email)
