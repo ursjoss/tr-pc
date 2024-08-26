@@ -8,6 +8,6 @@ dependencies {
     implementation(project(":au.com.trgtd.tr.swing"))
     implementation(project(":au.com.trgtd.tr.util"))
 
-    implementation(libs.ical4j)
+    api(libs.ical4j)
 }
 
