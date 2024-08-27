@@ -13,6 +13,10 @@ subprojects {
 
     repositories {
         mavenCentral()
+
+        maven {
+            url = uri("https://netbeans.apidesign.org/maven2")
+        }
     }
 
     dependencies {

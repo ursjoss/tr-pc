@@ -7,6 +7,8 @@ junit4 = "4.13.2"
 miglayout-swing = "4.1"
 minimal-json = "0.9.4"
 netbeans-api = "RELEASE220"
+netbeans-ext-swing = "RELEASE802"
+xstream = "1.4.19"
 
 [libraries]
 apache-commons-email = { module = "org.apache.commons:commons-email", version.ref = "apache-commons-email" }
@@ -17,7 +19,9 @@ junit-vintage-engine = { module = "org.junit.vintage:junit-vintage-engine", vers
 junit4 = { module = "junit:junit", version.ref = "junit4" }
 miglayout-swing = { module = "com.miglayout:miglayout-swing", version.ref = "miglayout-swing" }
 minimaljson = { module = "com.eclipsesource.minimal-json:minimal-json", version.ref = "minimal-json" }
+netbeans-api-layout = { module = "org.netbeans.api:org-jdesktop-layout", version.ref = "netbeans-ext-swing" }
 netbeans-api-progress = { module = "org.netbeans.api:org-netbeans-api-progress", version.ref = "netbeans-api" }
+netbeans-openide-awt = { module = "org.netbeans.api:org-openide-awt", version.ref = "netbeans-api" }
 netbeans-openide-dialogs = { module = "org.netbeans.api:org-openide-dialogs", version.ref = "netbeans-api" }
 netbeans-openide-filesystems = { module = "org.netbeans.api:org-openide-filesystems", version.ref = "netbeans-api" }
 netbeans-openide-modules-options-api = { module = "org.netbeans.api:org-netbeans-modules-options-api", version.ref = "netbeans-api" }
@@ -25,3 +29,4 @@ netbeans-openide-nodes = { module = "org.netbeans.api:org-openide-nodes", versio
 netbeans-openide-util = { module = "org.netbeans.api:org-openide-util", version.ref = "netbeans-api" }
 netbeans-openide-util-ui = { module = "org.netbeans.api:org-openide-util-ui", version.ref = "netbeans-api" }
 netbeans-openide-windows = { module = "org.netbeans.api:org-openide-windows", version.ref = "netbeans-api" }
+xstream = { module = "com.thoughtworks.xstream:xstream", version.ref = "xstream" }
