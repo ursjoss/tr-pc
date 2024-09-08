@@ -4,7 +4,7 @@ plugins {
 
 rootProject.name = "ThinkingRock"
 
-val auTrProjects = listOf("appl", "archive", "calendar", "calendar.ical4j", "datastore", "datastore.xstream", "prefs.actions", "prefs.data", "prefs.dates", "prefs.projects", "prefs.recurrence", "prefs.ui", "resource", "swing", "util", "runtime").map { "au.com.trgtd.tr.$it" }
+val auTrProjects = listOf("appl", "archive", "calendar", "calendar.ical4j", "datastore", "datastore.xstream", "prefs.actions", "prefs.data", "prefs.dates", "prefs.projects", "prefs.recurrence", "prefs.ui", "resource", "swing", "task.activation", "util", "runtime").map { "au.com.trgtd.tr.$it" }
 
 val trProjects = listOf("model").map { "tr.$it" }
 
