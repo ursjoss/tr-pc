@@ -5,8 +5,6 @@ plugins {
 }
 
 dependencies {
-    api(libs.netbeans.openide.modules.options.api)
-
     implementation(project(":au.com.trgtd.tr.appl"))
     implementation(project(":au.com.trgtd.tr.datastore"))
     implementation(project(":au.com.trgtd.tr.datastore.xstream"))
