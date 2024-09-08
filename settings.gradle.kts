@@ -24,6 +24,7 @@ val auTrProjects = listOf(
     "task.recurrence",
     "util",
     "runtime",
+    "services",
 ).map { "au.com.trgtd.tr.$it" }
 
 val trProjects = listOf("model").map { "tr.$it" }
