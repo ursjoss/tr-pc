@@ -2,6 +2,7 @@
 apache-commons-email = "1.6.0"
 apache-commons-lang3 = "3.12.0"
 ical4j = "1.0.5.2"
+javax-mail = "1.4.7"
 junit-jupiter = "5.10.1"
 junit4 = "4.13.2"
 miglayout-swing = "4.1"
@@ -14,6 +15,7 @@ xstream = "1.4.19"
 apache-commons-email = { module = "org.apache.commons:commons-email", version.ref = "apache-commons-email" }
 apache-commons-lang3 = { module = "org.apache.commons:commons-lang3", version.ref = "apache-commons-lang3" }
 ical4j = { module = "org.mnode.ical4j:ical4j", version.ref = "ical4j" }
+javax-mail = { module = "javax.mail:mail", version.ref = "javax-mail" }
 junit-jupiter = { module = "org.junit.jupiter:junit-jupiter", version.ref = "junit-jupiter" }
 junit-vintage-engine = { module = "org.junit.vintage:junit-vintage-engine", version.ref = "junit-jupiter" }
 junit4 = { module = "junit:junit", version.ref = "junit4" }
