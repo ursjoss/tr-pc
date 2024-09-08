@@ -10,6 +10,7 @@ val auTrProjects = listOf(
     "cal",
     "calendar",
     "calendar.ical4j",
+    "calendar.ical4j.impl",
     "data",
     "datastore",
     "datastore.xstream",
