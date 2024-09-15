@@ -47,7 +47,10 @@ val auTrProjects = listOf(
     "view.topics",
 ).map { "au.com.trgtd.tr.$it" }
 
-val trProjects = listOf("model").map { "tr.$it" }
+val trProjects = listOf(
+    "extract.reports",
+    "model",
+).map { "tr.$it" }
 
 include(auTrProjects)
 include(trProjects)
