@@ -12,6 +12,7 @@ minimal-json = "0.9.4"
 netbeans-api = "RELEASE220"
 netbeans-ext-swing = "RELEASE802"
 super-csv = "2.4.0"
+swingx = "1.6.5-1"
 xstream = "1.4.19"
 
 [libraries]
@@ -38,4 +39,5 @@ netbeans-openide-util = { module = "org.netbeans.api:org-openide-util", version.
 netbeans-openide-util-ui = { module = "org.netbeans.api:org-openide-util-ui", version.ref = "netbeans-api" }
 netbeans-openide-windows = { module = "org.netbeans.api:org-openide-windows", version.ref = "netbeans-api" }
 supercsv = { module = "net.sf.supercsv:super-csv", version.ref = "super-csv" }
+swingx = { module = "org.swinglabs.swingx:swingx-core", version.ref = "swingx" }
 xstream = { module = "com.thoughtworks.xstream:xstream", version.ref = "xstream" }

@@ -23,6 +23,7 @@ val auTrProjects = listOf(
     "export.references",
     "export.someday",
     "extract",
+//    "find",
     //"extract.clean", // broken?
     "prefs.actions",
     "prefs.data",
@@ -37,6 +38,7 @@ val auTrProjects = listOf(
     "util",
     "runtime",
     "services",
+    "view",
 ).map { "au.com.trgtd.tr.$it" }
 
 val trProjects = listOf("model").map { "tr.$it" }
