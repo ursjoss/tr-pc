@@ -39,6 +39,7 @@ val auTrProjects = listOf(
     "runtime",
     "services",
     "view",
+    "view.contexts",
     "view.topics",
 ).map { "au.com.trgtd.tr.$it" }
 
