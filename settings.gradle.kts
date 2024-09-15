@@ -39,6 +39,7 @@ val auTrProjects = listOf(
     "runtime",
     "services",
     "view",
+    "view.topics",
 ).map { "au.com.trgtd.tr.$it" }
 
 val trProjects = listOf("model").map { "tr.$it" }

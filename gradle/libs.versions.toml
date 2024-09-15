@@ -3,6 +3,7 @@ apache-commons-email = "1.6.0"
 apache-commons-lang3 = "3.12.0"
 apache-commons-text = "1.12.0"
 fop = "0.95-1"
+glazedlists = "1.11.0"
 ical4j = "1.0.5.2"
 javax-mail = "1.4.7"
 junit-jupiter = "5.10.1"
@@ -20,6 +21,7 @@ apache-commons-email = { module = "org.apache.commons:commons-email", version.re
 apache-commons-lang3 = { module = "org.apache.commons:commons-lang3", version.ref = "apache-commons-lang3" }
 apache-commons-text = { module = "org.apache.commons:commons-text", version.ref = "apache-commons-text" }
 fop = { module = "org.apache.xmlgraphics:fop", version.ref = "fop" }
+glazedlists = { module = "com.glazedlists:glazedlists", version.ref = "glazedlists" }
 ical4j = { module = "org.mnode.ical4j:ical4j", version.ref = "ical4j" }
 javax-mail = { module = "javax.mail:mail", version.ref = "javax-mail" }
 junit-jupiter = { module = "org.junit.jupiter:junit-jupiter", version.ref = "junit-jupiter" }
