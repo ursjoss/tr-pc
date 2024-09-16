@@ -38,6 +38,7 @@ val auTrProjects = listOf(
     "util",
     "report.project.detail",
     "report.project.outline",
+    "report.projects.future",
     "report.sa",
     "reports.actions.delegated",
     "reports.actions.doasap",
