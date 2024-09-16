@@ -38,6 +38,7 @@ val auTrProjects = listOf(
     "util",
     "report.project.detail",
     "report.project.outline",
+    "reports.actions.scheduled",
     "reports.done",
     "reports.pocketmod",
     "reports.reference",
