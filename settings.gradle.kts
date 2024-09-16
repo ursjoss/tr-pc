@@ -40,6 +40,7 @@ val auTrProjects = listOf(
     "report.project.outline",
     "runtime",
     "services",
+    "updates",
     "view",
     "view.actn",
     "view.actns",
