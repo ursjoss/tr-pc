@@ -50,6 +50,7 @@ val auTrProjects = listOf(
     "reports.weekly",
     "runtime",
     "services",
+    "sync.device",
     "task.messages",
     "updates",
     "view",

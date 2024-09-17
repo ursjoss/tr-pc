@@ -3,13 +3,16 @@ apache-commons-email = "1.6.0"
 apache-commons-lang3 = "3.12.0"
 apache-commons-text = "1.12.0"
 batik = "1.6-1"
+ddmlib = "22.5.3"
 fop = "0.95-1"
 glazedlists = "1.11.0"
 ical4j = "1.0.5.2"
 itext = "2.1.7"
+jackson-databind = "2.2.3"
 jasperreports = "5.1.0"
 javax-mail = "1.4.7"
 jaxb-api = "2.3.0"
+jmdns = "3.4.2-r353-1"
 junit-jupiter = "5.10.1"
 junit4 = "4.13.2"
 miglayout-swing = "4.1"
@@ -25,13 +28,16 @@ apache-commons-email = { module = "org.apache.commons:commons-email", version.re
 apache-commons-lang3 = { module = "org.apache.commons:commons-lang3", version.ref = "apache-commons-lang3" }
 apache-commons-text = { module = "org.apache.commons:commons-text", version.ref = "apache-commons-text" }
 batik-swing = { module = "batik:batik-swing", version.ref = "batik" }
+ddmlib = { module = "com.android.tools.ddms:ddmlib", version.ref = "ddmlib" }
 fop = { module = "org.apache.xmlgraphics:fop", version.ref = "fop" }
 glazedlists = { module = "com.glazedlists:glazedlists", version.ref = "glazedlists" }
 ical4j = { module = "org.mnode.ical4j:ical4j", version.ref = "ical4j" }
 itext = { module = "com.lowagie:itext", version.ref = "itext" }
+jackson-databind = { module = "com.fasterxml.jackson.core:jackson-databind", version.ref = "jackson-databind" }
 jasperreports = { module = "net.sf.jasperreports:jasperreports", version.ref = "jasperreports" }
 javax-mail = { module = "javax.mail:mail", version.ref = "javax-mail" }
 jaxb-api = { module = "javax.xml.bind:jaxb-api", version.ref = "jaxb-api" }
+jmdns = { module = "com.github.rickyclarkson:jmdns", version.ref = "jmdns" }
 junit-jupiter = { module = "org.junit.jupiter:junit-jupiter", version.ref = "junit-jupiter" }
 junit-vintage-engine = { module = "org.junit.vintage:junit-vintage-engine", version.ref = "junit-jupiter" }
 junit4 = { module = "junit:junit", version.ref = "junit4" }
