@@ -24,6 +24,7 @@ val auTrProjects = listOf(
     "export.someday",
     "extract",
     "find",
+    "i18n",
     //"extract.clean", // broken?
     "l10n.de_DE",
     "l10n.en_US",
