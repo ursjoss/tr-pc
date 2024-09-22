@@ -7,6 +7,6 @@ plugins {
 dependencies {
     implementation(project(":au.com.trgtd.tr.view"))
     implementation(libs.glazedlists)
-    implementation(libs.netbeans.jdesktop.layout)
+    implementation(libs.netbeans.api.jdesktop.layout)
 }
 

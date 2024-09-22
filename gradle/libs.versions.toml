@@ -44,7 +44,7 @@ junit4 = { module = "junit:junit", version.ref = "junit4" }
 miglayout-swing = { module = "com.miglayout:miglayout-swing", version.ref = "miglayout-swing" }
 minimaljson = { module = "com.eclipsesource.minimal-json:minimal-json", version.ref = "minimal-json" }
 netbeans-api-progress = { module = "org.netbeans.api:org-netbeans-api-progress", version.ref = "netbeans-api" }
-netbeans-jdesktop-layout = { module = "org.netbeans.api:org-jdesktop-layout", version.ref = "netbeans-ext-swing" }
+netbeans-api-jdesktop-layout = { module = "org.netbeans.api:org-jdesktop-layout", version.ref = "netbeans-ext-swing" }
 netbeans-modules-core-multitabs-project = { module = "org.netbeans.modules:org-netbeans-core-multitabs-project", version.ref = "netbeans-api" }
 netbeans-modules-core-windows = { module = "org.netbeans.modules:org-netbeans-core-windows", version.ref = "netbeans-api" }
 netbeans-modules-projectapi-nb = { module = "org.netbeans.modules:org-netbeans-modules-projectapi-nb", version.ref = "netbeans-api" }

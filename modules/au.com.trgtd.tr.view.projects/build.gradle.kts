@@ -21,6 +21,6 @@ dependencies {
 
     implementation(libs.itext)
     implementation(libs.jasperreports)
-    implementation(libs.netbeans.jdesktop.layout)
+    implementation(libs.netbeans.api.jdesktop.layout)
 }
 
