@@ -14,6 +14,6 @@ dependencies {
     implementation(project(":tr.model"))
 
     implementation(libs.netbeans.api.jdesktop.layout)
-    implementation(libs.netbeans.openide.awt)
+    implementation(libs.netbeans.api.openide.awt)
 }
 
