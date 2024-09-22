@@ -1,16 +1,11 @@
 plugins {
     java
-    application
 }
 
 java {
     toolchain {
         languageVersion = JavaLanguageVersion.of(17)
     }
-}
-
-application {
-    mainClass = "org.netbeans.core.startup.Main"
 }
 
 subprojects {
