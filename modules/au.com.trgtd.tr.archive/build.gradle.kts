@@ -13,7 +13,7 @@ dependencies {
     implementation(project(":au.com.trgtd.tr.swing"))
     implementation(project(":tr.model"))
 
+    implementation(libs.netbeans.jdesktop.layout)
     implementation(libs.netbeans.openide.awt)
-    implementation(libs.netbeans.api.layout)
 }
 
