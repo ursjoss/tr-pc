@@ -13,3 +13,10 @@ dependencies {
     implementation(libs.netbeans.api.openide.util.ui)
 }
 
+tasks.named<Test>("test") {
+    useJUnitPlatform()
+    if (System.getProperty("test.profile") != "allTests") {
+        exclude("**/SpinnerCycleNumberTest*")
+    }
+}
+
