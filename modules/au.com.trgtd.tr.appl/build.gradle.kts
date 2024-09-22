@@ -5,7 +5,7 @@ plugins {
 }
 
 dependencies {
-    api(libs.netbeans.openide.modules.options.api)
+    api(libs.netbeans.modules.options.api)
 
     implementation(libs.netbeans.openide.windows)
     implementation(libs.miglayout.swing)
