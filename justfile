@@ -56,5 +56,5 @@ clear-cache-prod:
 
 # Starts the ThinkingRock application from sources
 run:
-	./gradlew runNetBeans
+	./gradlew :au.com.trgtd.tr.appl:runNetBeans
 
