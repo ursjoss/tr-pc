@@ -174,8 +174,5 @@ clear-cache-prod:
 
 # Starts the ThinkingRock application from sources
 run:
-	ant -f ./modules/au.com.trgtd.tr.calendar \
-	    -Dant.build.javac.target={{ java-version }} \
-	    -Dant.build.javac.source={{ java-version }} \
-	    -Dcontinue.after.failing.tests=true \
-	    run
+	./gradlew runNetBeans
+
