@@ -19,8 +19,8 @@ dependencies {
     implementation(libs.apache.commons.lang3)
     implementation(libs.minimaljson)
     implementation(libs.netbeans.api.progress)
-    implementation(libs.netbeans.openide.dialogs)
-    implementation(libs.netbeans.openide.nodes)
-    implementation(libs.netbeans.openide.util)
+    implementation(libs.netbeans.api.openide.dialogs)
+    implementation(libs.netbeans.api.openide.nodes)
+    implementation(libs.netbeans.api.openide.util)
 }
 

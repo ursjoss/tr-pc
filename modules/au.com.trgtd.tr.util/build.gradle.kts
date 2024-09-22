@@ -5,6 +5,6 @@ plugins {
 }
 
 dependencies {
-    implementation(libs.netbeans.openide.windows)
+    implementation(libs.netbeans.api.openide.windows)
 }
 

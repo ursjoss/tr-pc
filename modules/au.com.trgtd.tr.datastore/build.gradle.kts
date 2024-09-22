@@ -5,7 +5,7 @@ plugins {
 }
 
 dependencies {
-    api(libs.netbeans.openide.util)
+    api(libs.netbeans.api.openide.util)
     api(project(":au.com.trgtd.tr.util"))
 
     implementation(project(":tr.model"))

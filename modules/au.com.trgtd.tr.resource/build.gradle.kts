@@ -5,7 +5,7 @@ plugins {
 }
 
 dependencies {
-    implementation(libs.netbeans.openide.filesystems)
-    implementation(libs.netbeans.openide.util.ui)
+    implementation(libs.netbeans.api.openide.filesystems)
+    implementation(libs.netbeans.api.openide.util.ui)
 }
 
