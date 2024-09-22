@@ -28,5 +28,11 @@ subprojects {
     tasks.named<Test>("test") {
         useJUnitPlatform()
     }
+
+    tasks.withType<Jar>().configureEach {
+        manifest {
+            from("${project.projectDir}/manifest.mf")
+        }
+    }
 }
 
