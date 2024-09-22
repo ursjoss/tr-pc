@@ -5,18 +5,18 @@ plugins {
     application
 }
 
+
 dependencies {
     api(libs.netbeans.api.modules.options.api)
 
     implementation(libs.miglayout.swing)
-
-    runtimeOnly(libs.netbeans.modules.projectapi.nb)
-    runtimeOnly(libs.netbeans.modules.core.multitabs.project)
-    runtimeOnly(libs.netbeans.modules.core.windows)
 }
 
+val netbeansVersion = "22"
+
 tasks.register<JavaExec>("runNetBeans") {
-    classpath = sourceSets["main"].runtimeClasspath
+    dependsOn(rootProject.tasks.named("downloadNetBeans"))
+    classpath = sourceSets["main"].runtimeClasspath + files("${layout.buildDirectory}/netbeans-platform/platform/lib/boot.jar")
     mainClass.set("org.netbeans.core.startup.Main")
     args("--branding", project.name)
     jvmArgs = listOf(
@@ -33,6 +33,12 @@ tasks.register<JavaExec>("runNetBeans") {
         "--add-opens=java.desktop/javax.swing=ALL-UNNAMED",
         "--add-opens=java.desktop/sun.awt=ALL-UNNAMED",
     )
+    val userdir = file("${rootProject.layout.buildDirectory.get()}/userdir")
+    val netbeansPlatDir = file("${rootProject.layout.projectDirectory}/netbeans-plat/$netbeansVersion/")
+    systemProperty("netbeans.user", userdir)
+    systemProperty("netbeans.dirs", netbeansPlatDir)
+    systemProperty("netbeans.home", netbeansPlatDir.resolve("platform/"))
     systemProperty("netbeans.logger.console", "true")
     systemProperty("java.security.manager", "allow")
 }
+
