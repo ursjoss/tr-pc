@@ -5,7 +5,7 @@ plugins {
 }
 
 dependencies {
-    api(libs.netbeans.modules.options.api)
+    api(libs.netbeans.api.modules.options.api)
 
     implementation(libs.miglayout.swing)
 

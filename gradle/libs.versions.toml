@@ -46,10 +46,10 @@ minimaljson = { module = "com.eclipsesource.minimal-json:minimal-json", version.
 netbeans-api-progress = { module = "org.netbeans.api:org-netbeans-api-progress", version.ref = "netbeans-api" }
 netbeans-api-jdesktop-layout = { module = "org.netbeans.api:org-jdesktop-layout", version.ref = "netbeans-ext-swing" }
 netbeans-api-modules-javahelp = { module = "org.netbeans.api:org-netbeans-modules-javahelp", version.ref = "netbeans-api" }
+netbeans-api-modules-options-api = { module = "org.netbeans.api:org-netbeans-modules-options-api", version.ref = "netbeans-api" }
 netbeans-modules-core-multitabs-project = { module = "org.netbeans.modules:org-netbeans-core-multitabs-project", version.ref = "netbeans-api" }
 netbeans-modules-core-windows = { module = "org.netbeans.modules:org-netbeans-core-windows", version.ref = "netbeans-api" }
 netbeans-modules-projectapi-nb = { module = "org.netbeans.modules:org-netbeans-modules-projectapi-nb", version.ref = "netbeans-api" }
-netbeans-modules-options-api = { module = "org.netbeans.api:org-netbeans-modules-options-api", version.ref = "netbeans-api" }
 netbeans-openide-awt = { module = "org.netbeans.api:org-openide-awt", version.ref = "netbeans-api" }
 netbeans-openide-dialogs = { module = "org.netbeans.api:org-openide-dialogs", version.ref = "netbeans-api" }
 netbeans-openide-filesystems = { module = "org.netbeans.api:org-openide-filesystems", version.ref = "netbeans-api" }
