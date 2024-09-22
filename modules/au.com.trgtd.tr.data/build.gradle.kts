@@ -13,6 +13,6 @@ dependencies {
     implementation(project(":au.com.trgtd.tr.task.activation"))
     implementation(project(":au.com.trgtd.tr.task.recurrence"))
 
-    implementation(libs.netbeans.api.javahelp)
+    implementation(libs.netbeans.modules.javahelp)
 }
 
