@@ -10,6 +10,9 @@ dependencies {
     api(libs.netbeans.api.modules.options.api)
 
     implementation(libs.miglayout.swing)
+
+    runtimeOnly(libs.netbeans.api.openide.filesystems.compat8)
+    runtimeOnly(libs.netbeans.modules.ide.kit)
 }
 
 val netbeansVersion = "22"
@@ -36,10 +39,11 @@ tasks.register<JavaExec>("runNetBeans") {
 	"-XX:HeapDumpPath=build/userdir/var/log/heapdumup.hprof",
     )
     val userdir = file("${rootProject.layout.buildDirectory.get()}/userdir")
-    val netbeansPlatDir = file("${rootProject.layout.projectDirectory}/netbeans-plat/$netbeansVersion/")
+    val clusterDir = file("${rootProject.layout.buildDirectory.get()}/cluster")
+    val netbeansDir = file("${rootProject.layout.projectDirectory}/netbeans-plat/$netbeansVersion/")
     systemProperty("netbeans.user", userdir)
-    systemProperty("netbeans.dirs", netbeansPlatDir)
-    systemProperty("netbeans.home", netbeansPlatDir.resolve("platform/"))
+    systemProperty("netbeans.dirs", listOf(clusterDir, netbeansDir.resolve("harness"), netbeansDir.resolve("ide")).joinToString(":"))
+    systemProperty("netbeans.home", netbeansDir.resolve("platform"))
     systemProperty("netbeans.logger.console", "true")
     systemProperty("java.security.manager", "allow")
 }
