@@ -21,7 +21,7 @@ tasks.register<JavaExec>("runNetBeans") {
     args("--branding", project.name)
     jvmArgs = listOf(
         "-ea",
-        "-Xms128m", "-Xmx512m",
+        "-Xms512m", "-Xmx2048m",
         "-Dorg.netbeans.ProxyClassLoader.level=1000",
         "--add-opens=java.base/java.lang.reflect=ALL-UNNAMED",
         "--add-opens=java.base/java.lang=ALL-UNNAMED",
