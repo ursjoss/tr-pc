@@ -32,6 +32,8 @@ tasks.register<JavaExec>("runNetBeans") {
         "--add-opens=java.desktop/java.awt.font=ALL-UNNAMED",
         "--add-opens=java.desktop/javax.swing=ALL-UNNAMED",
         "--add-opens=java.desktop/sun.awt=ALL-UNNAMED",
+	"-XX:+HeapDumpOnOutOfMemoryError",
+	"-XX:HeapDumpPath=build/userdir/var/log/heapdumup.hprof",
     )
     val userdir = file("${rootProject.layout.buildDirectory.get()}/userdir")
     val netbeansPlatDir = file("${rootProject.layout.projectDirectory}/netbeans-plat/$netbeansVersion/")
