@@ -11,6 +11,7 @@ dependencies {
 
     implementation(libs.miglayout.swing)
 
+    runtimeOnly(libs.netbeans.api.modules.netbinox)
     runtimeOnly(libs.netbeans.api.openide.filesystems.compat8)
     runtimeOnly(libs.netbeans.modules.ide.kit)
 }
