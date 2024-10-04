@@ -3,11 +3,11 @@ plugins {
     alias(libs.plugins.download)
 }
 
-val netbeansVersion = 22
+private val netbeansVersion = libs.versions.netbeans
 
 java {
     toolchain {
-        languageVersion = JavaLanguageVersion.of(17)
+        languageVersion = JavaLanguageVersion.of(libs.versions.java.get())
     }
 }
 
@@ -93,4 +93,3 @@ tasks{
         }
     }
 }
-
