@@ -62,6 +62,7 @@ val auTrProjects = listOf(
     "sync.iphone",
     "task.messages",
     "updates",
+    "util",
     "view",
     "view.actn",
     "view.actns",
