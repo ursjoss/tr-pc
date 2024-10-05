@@ -13,4 +13,3 @@ dependencies {
     implementation(project(":au.com.trgtd.tr.task.recurrence"))
     implementation(project(":tr.model"))
 }
-

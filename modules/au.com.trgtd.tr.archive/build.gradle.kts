@@ -16,4 +16,3 @@ dependencies {
     implementation(libs.netbeans.api.jdesktop.layout)
     implementation(libs.netbeans.api.openide.awt)
 }
-

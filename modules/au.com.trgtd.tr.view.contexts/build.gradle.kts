@@ -9,4 +9,3 @@ dependencies {
     implementation(libs.glazedlists)
     implementation(libs.netbeans.api.jdesktop.layout)
 }
-

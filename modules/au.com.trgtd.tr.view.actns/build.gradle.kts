@@ -24,4 +24,3 @@ dependencies {
     implementation(libs.glazedlists)
     implementation(libs.jaxb.api)
 }
-

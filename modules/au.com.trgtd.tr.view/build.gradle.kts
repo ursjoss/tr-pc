@@ -18,6 +18,4 @@ dependencies {
     api(libs.apache.commons.text)
 
     implementation(project(":au.com.trgtd.tr.runtime"))
-
 }
-

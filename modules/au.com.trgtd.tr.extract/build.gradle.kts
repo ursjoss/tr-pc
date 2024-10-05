@@ -15,4 +15,3 @@ dependencies {
     implementation(libs.apache.commons.text)
     implementation(libs.fop)
 }
-

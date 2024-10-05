@@ -15,4 +15,3 @@ dependencies {
 
     implementation(libs.netbeans.api.modules.javahelp)
 }
-

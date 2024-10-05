@@ -25,4 +25,3 @@ dependencies {
     implementation(libs.batik.swing)
     implementation(libs.swingx)
 }
-

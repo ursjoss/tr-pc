@@ -13,4 +13,3 @@ dependencies {
     implementation(libs.javax.mail)
     implementation(libs.miglayout.swing)
 }
-

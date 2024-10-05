@@ -10,4 +10,3 @@ dependencies {
 
     implementation(project(":tr.model"))
 }
-

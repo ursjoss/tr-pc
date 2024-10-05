@@ -23,4 +23,3 @@ dependencies {
     implementation(libs.netbeans.api.openide.nodes)
     implementation(libs.netbeans.api.openide.util)
 }
-

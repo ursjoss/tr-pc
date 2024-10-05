@@ -15,4 +15,3 @@ dependencies {
     implementation(libs.jmdns)
     implementation(libs.miglayout.swing)
 }
-

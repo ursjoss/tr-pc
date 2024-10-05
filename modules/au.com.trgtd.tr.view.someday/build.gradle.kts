@@ -18,4 +18,3 @@ dependencies {
 
     implementation(libs.glazedlists)
 }
-

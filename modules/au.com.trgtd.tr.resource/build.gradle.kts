@@ -8,4 +8,3 @@ dependencies {
     implementation(libs.netbeans.api.openide.filesystems)
     implementation(libs.netbeans.api.openide.util.ui)
 }
-

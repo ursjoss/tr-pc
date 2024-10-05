@@ -7,4 +7,3 @@ plugins {
 dependencies {
     implementation(project(":au.com.trgtd.tr.appl"))
 }
-

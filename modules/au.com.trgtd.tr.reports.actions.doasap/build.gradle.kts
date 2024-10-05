@@ -16,4 +16,3 @@ dependencies {
     implementation(libs.itext)
     implementation(libs.jasperreports)
 }
-

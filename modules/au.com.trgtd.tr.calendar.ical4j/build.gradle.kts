@@ -10,4 +10,3 @@ dependencies {
 
     api(libs.ical4j)
 }
-

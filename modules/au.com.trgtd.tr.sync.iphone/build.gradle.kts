@@ -13,4 +13,3 @@ dependencies {
 
     implementation(libs.miglayout.swing)
 }
-

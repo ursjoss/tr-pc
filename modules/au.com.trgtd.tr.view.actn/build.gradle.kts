@@ -14,4 +14,3 @@ dependencies {
     implementation(project(":au.com.trgtd.tr.view.project"))
     implementation(project(":au.com.trgtd.tr.view.topics"))
 }
-

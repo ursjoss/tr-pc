@@ -48,4 +48,3 @@ tasks.register<JavaExec>("runNetBeans") {
     systemProperty("netbeans.logger.console", "true")
     systemProperty("java.security.manager", "allow")
 }
-

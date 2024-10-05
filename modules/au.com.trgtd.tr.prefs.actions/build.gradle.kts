@@ -9,4 +9,3 @@ dependencies {
     implementation(project(":au.com.trgtd.tr.swing"))
     implementation(project(":au.com.trgtd.tr.util"))
 }
-

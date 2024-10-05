@@ -19,4 +19,3 @@ tasks.named<Test>("test") {
         exclude("**/SpinnerCycleNumberTest*")
     }
 }
-

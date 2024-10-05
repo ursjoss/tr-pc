@@ -7,4 +7,3 @@ plugins {
 dependencies {
     implementation(libs.netbeans.api.openide.util.ui)
 }
-
