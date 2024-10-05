@@ -19,6 +19,7 @@ dependencies {
 val netbeansVersion = "22"
 
 tasks.register<JavaExec>("runNetBeans") {
+    val userdir = file("${rootProject.layout.buildDirectory.get()}/testuserdir")
     dependsOn(rootProject.tasks.named("downloadNetBeans"))
     classpath = sourceSets["main"].runtimeClasspath + files("${layout.buildDirectory}/netbeans-platform/platform/lib/boot.jar")
     mainClass.set("org.netbeans.core.startup.Main")
@@ -37,9 +38,8 @@ tasks.register<JavaExec>("runNetBeans") {
         "--add-opens=java.desktop/javax.swing=ALL-UNNAMED",
         "--add-opens=java.desktop/sun.awt=ALL-UNNAMED",
 	"-XX:+HeapDumpOnOutOfMemoryError",
-	"-XX:HeapDumpPath=build/userdir/var/log/heapdumup.hprof",
+	"-XX:HeapDumpPath=$userdir/var/log/heapdumup.hprof",
     )
-    val userdir = file("${rootProject.layout.buildDirectory.get()}/userdir")
     val clusterDir = file("${rootProject.layout.buildDirectory.get()}/cluster")
     val netbeansDir = file("${rootProject.layout.projectDirectory}/netbeans-plat/$netbeansVersion/")
     systemProperty("netbeans.user", userdir)
