@@ -3,7 +3,7 @@ plugins {
     alias(libs.plugins.download)
 }
 
-private val netbeansVersion = libs.versions.netbeans
+private val netbeansVersion = libs.versions.netbeans.ide.get()
 
 java {
     toolchain {
